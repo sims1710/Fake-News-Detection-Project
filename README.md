@@ -4,7 +4,7 @@ Our group is developing a Neural Network solution to detect first fake news when
 
 ## Step 1: Fake News Detection
 
-In this first step, we run five different types of NNs and choose the best one (based on the evaluation metrics) to continue with Step 2. The `merge.csv` file from the Data Source Folder is used as our dataset. It is splitted into the following ratio: 80-10-10 (training-testing-validation).
+In this first step, we run five different types of NNs and choose the best one (based on the evaluation metrics) to continue with Step 2. The `merged_data.csv` file from the Data Source Folder is used as our dataset. It is splitted into the following ratio: 80-10-10 (training-testing-validation).
 
 ### Datasets 
 1. Step 1: https://github.com/sophialatessa/FakeNewsDeepLearning
