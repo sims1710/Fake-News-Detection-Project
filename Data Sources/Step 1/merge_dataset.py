@@ -11,11 +11,12 @@ def read_csv(input_file):
     return rows
 
 # Write CSV file with an index column
-def write_csv(output_file, data):
+def write_csv(output_file, merged_data):
     with open(output_file, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        for index, row in enumerate(data):
-            writer.writerow([index] + row)  # Write index column as the first column, followed by data
+        writer.writerow(['index', 'article', 'real/fake'])  # Write header row
+        for index, article in enumerate(merged_data):
+            writer.writerow([index] + article)  # Write index column as the first column, followed by data
 
 # Merge two CSV files in a random manner
 def merge_csvs(csv1, csv2):
@@ -41,3 +42,4 @@ merged_data = merge_csvs(data1, data2)
 write_csv(output_file, merged_data)
 
 print("CSV files merged successfully!")
+
