@@ -1,4 +1,4 @@
-# Fake News Detection
+# Fake News Detection and Classification
 
 ## Description
 The purpose of this project is to devise an AI model that is able to detect whether an article of news is fake or real, and thus classify the fake news type. There are 7 predefined classes of fake news:
